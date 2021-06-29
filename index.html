@@ -1,0 +1,106 @@
+<html>
+  <head>
+    <title>MobileNet</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+
+  <body >
+        <div class="col-xs-12 header_div" style="text-align: center;">
+            <h2>Image Object Idetification App
+              <img src="prof.png">
+            </h2>
+          </div>
+        
+          <div class="container" style="text-align: left;">
+        <ol>
+            <div class="text_images_and_result" style="width: 350px; height: 500px; text-align: center;">
+                <li>
+                    <b>Test Image - </b><img src="bottle.jpeg" class="img-responsive" style="width: 300px; height: 200px; box-shadow: 2px 2px 8px orange;">
+                </li>
+                <h5>Output on -<b style="color: blueviolet;">Microsoft Azure</b>
+                    <span id="msa1" style="color: red;">salt shaker</span>    
+                </h5>
+                <h5>Output on -<b style="color: blueviolet;">MobileNet Model</b>
+                    <span id="mobnet1" style="color: red;">Water Bottle</span>    
+                </h5>
+                <div class="bob1">
+                    <h4>Result -</h4>
+                    <hr>
+                    <h4>MobileNet Guessed it Correctly</h4>
+                </div>
+
+            </div>
+        
+        
+        
+          <div class="text_images_and_result" style="width: 350px; height: 400px; margin-top: 30px; text-align: center;">
+              <li>
+                  <b>Test Image - </b><img src="head.webp" class="img-responsive" style="width: 300px; height: 200px; box-shadow: 2px 2px 8px goldenrod;">
+              </li>
+              <h5>Output on -<b style="color: blueviolet;">Microsoft Azure</b>
+                  <span id="msa2" style="color: red;">hearing aid</span>    
+              </h5>
+              <h5>Output on -<b style="color: blueviolet;">MobileNet Model</b>
+                  <span id="mobnet2" style="color: red;">Ring Binder</span>    
+              </h5>
+              <div class="bob2">
+                  <h4>Result -</h4>
+                  <hr>
+                  <h4>Both of Them Guessed It wrong</h4>
+              </div>
+          </div>
+      
+
+      
+        <div class="text_images_and_result" style="width: 350px; height: 400px; margin-top: 30px; text-align: center;">
+            <li>
+                <b>Test Image - </b><img src="icecream.jpeg" class="img-responsive" style="width: 300px; height: 200px; box-shadow: 2px 2px 8px orange;">
+            </li>
+            <h5>Output on -<b style="color: blueviolet;">Microsoft Azure</b>
+                <span id="msa3" style="color: red;">ice cream cone</span>    
+            </h5>
+            <h5>Output on -<b style="color: blueviolet;">MobileNet Model</b>
+                <span id="mobnet3" style="color: red;">Radio, Wireless</span>    
+            </h5>
+            <div class="bob3">
+                <h4>Result -</h4>
+                <hr>
+                <h4>Microsoft guessed it Correctly</h4>
+            </div>
+        </div>
+    
+
+    
+      <div class="text_images_and_result" style="width: 350px; height: 400px; margin-top: 30px; text-align: center;">
+          <li>
+              <b>Test Image - </b><img src="mag.jpeg" class="img-responsive" style="width: 300px; height: 200px; box-shadow: 2px 2px 8px rgb(56, 197, 233);">
+          </li>
+          <h5>Output on -<b style="color: blueviolet;">Microsoft Azure</b>
+              <span id="msa4" style="color: red;">galosh</span>    
+          </h5>
+          <h5>Output on -<b style="color: blueviolet;">MobileNet Model</b>
+              <span id="mobnet4" style="color: red;">Clog, Geta, Patten, Sabot</span>    
+          </h5>
+          <div class="bob4">
+              <h4>Result -</h4>
+              <hr>
+              <h4>Both are very close</h4>
+          </div>
+      </div>
+  </ol>
+</div>
+
+    <div class="copy_right_footer" style="position: fixed;">
+      Developed by: Shourya
+    </div>
+<script src="main.js"></script>
+  </body>
+</html>
